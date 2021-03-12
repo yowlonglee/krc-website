@@ -1,3 +1,5 @@
+require('dotenv').config({ path: '.env' });
+
 module.exports = {
   siteMetadata: {
     title: "KRC Website",
@@ -16,5 +18,14 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `bnib2d25`,
+        dataset: `production`,
+        watchMode: true,
+        token: process.env.SANITY_TOKEN
+      }
+    }
   ],
 };
