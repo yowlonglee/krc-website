@@ -1,11 +1,11 @@
 export default {
   name: 'author',
-  title: 'Author',
+  title: '作者',
   type: 'document',
   fields: [
     {
       name: 'name',
-      title: 'Name',
+      title: '名稱',
       type: 'string',
     },
     {
@@ -19,7 +19,7 @@ export default {
     },
     {
       name: 'image',
-      title: 'Image',
+      title: '圖片',
       type: 'image',
       options: {
         hotspot: true,
@@ -27,7 +27,7 @@ export default {
     },
     {
       name: 'bio',
-      title: 'Bio',
+      title: '介紹',
       type: 'array',
       of: [
         {

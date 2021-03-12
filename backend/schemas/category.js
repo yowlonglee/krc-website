@@ -1,6 +1,6 @@
 export default {
   name: 'category',
-  title: 'Category',
+  title: '類別',
   type: 'document',
   fields: [
     {

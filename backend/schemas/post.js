@@ -1,11 +1,11 @@
 export default {
   name: 'post',
-  title: 'Post',
+  title: '文章',
   type: 'document',
   fields: [
     {
       name: 'title',
-      title: 'Title',
+      title: '標題',
       type: 'string',
     },
     {
@@ -19,7 +19,7 @@ export default {
     },
     {
       name: 'author',
-      title: 'Author',
+      title: '作者',
       type: 'reference',
       to: {type: 'author'},
     },
@@ -33,18 +33,18 @@ export default {
     },
     {
       name: 'categories',
-      title: 'Categories',
+      title: '類別',
       type: 'array',
       of: [{type: 'reference', to: {type: 'category'}}],
     },
     {
       name: 'publishedAt',
-      title: 'Published at',
+      title: '發布時間',
       type: 'datetime',
     },
     {
       name: 'body',
-      title: 'Body',
+      title: '內容',
       type: 'blockContent',
     },
   ],
